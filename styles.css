@@ -1,0 +1,131 @@
+body{
+    margin: 0px;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 17px;
+    font-family: 'Karla', sans-serif;
+}
+
+.container{
+    overflow: hidden;
+    width: 750px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+
+.top-container{
+    background-color: white;
+    padding: 25px 50px;
+}
+
+.top-container h1{
+    font-size: 25px;
+    color: hsl(179, 62%, 43%);
+}
+
+.top-container p:nth-child(2){
+    color: hsl(71, 73%, 54%);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.top-container p:nth-child(3){
+    color: hsl(218, 22%, 67%);
+    font-weight: bold;
+    line-height: 27px;
+
+}
+
+
+.bot-container{
+    display: flex;
+    color: white;
+}
+
+.bot-items{
+    width: 50%;
+    padding: 25px 50px;
+}
+
+.bot-left-cont{
+    background-color: hsl(179, 62%, 43%);
+}
+
+.bot-right-cont{
+    background-color: hsl(178, 61%, 38%);
+}
+
+.bot-left-cont > span:nth-child(2){
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.bot-left-cont > span:nth-child(3){
+    position: relative;
+    bottom: 7px;
+    left: 7px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.52);
+}
+
+.bot-left-cont p{
+    position: relative;
+    bottom: 13px;
+    margin-bottom: 24px;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: hsl(71, 73%, 54%);
+    padding: 15px 95px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgb(46, 45, 45);
+}
+
+
+.bot-right-cont p{
+    color: rgba(255, 255, 255, 0.698);
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 730px){
+
+    .container{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .bot-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bot-items{
+        width: 100%;
+    }
+
+    a{
+       margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 420px){
+    .top-container{
+        padding: 30px;
+    }
+
+    .bot-items{
+        padding: 30px;
+    }
+}
+
+
+
